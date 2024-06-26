@@ -2,9 +2,6 @@
 ### Nomor 1
 Gambarkan AVL-tree dari deretan nilai: k, m, u, t, v, p, x.
 
-### Proses pembentukan AVL-tree:
-Mari kita periksa kembali pembentukan AVL tree untuk deretan nilai: k, m, u, t, v, p, x.
-
 ### Proses Pembentukan AVL Tree:
 
 1. **Masukkan k:**
