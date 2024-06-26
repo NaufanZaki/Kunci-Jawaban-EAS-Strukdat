@@ -153,39 +153,39 @@ Gambarkan AVL-tree dari deretan nilai: a, z, b, y, c, x, d, w, e, v, f.
 ```
 
 ### Nomor 3
-Mengacu BST berikut ini, gambarkan perubahan tree-nya jika dilakukan penghapusan satu node berikut. Untuk masing-masing penghapusan berikut ini, proses dilakukan terhadap BST awal.
-
-#### a) c
+#### a) Hapus Node `c`:
 ```
       h
      / \
     e   l
-   / \   \
-  b   f   j
- /       / \
-a       i   k
+   / \  / \
+  b   f j   m
+ / \   \   / \
+a   d   g i   k
 ```
 
-#### b) j
+#### b) Hapus Node `j`:
 ```
       h
      / \
     e   l
-   / \   \
-  b   f   m
- /       / \
-a       i   k
+   / \  / \
+  b   f k   m
+ / \   \  /
+a   d   g i
 ```
 
-#### c) h
+#### c) Hapus Node `h`:
 ```
       i
      / \
     e   l
-   / \   \
-  b   f   j
- /       / \
-a       g   k
+   / \  / \
+  b   f j   m
+ / \   \    \
+a   c   g    k
+      \     
+       d
 ```
 
 ### Nomor 4
