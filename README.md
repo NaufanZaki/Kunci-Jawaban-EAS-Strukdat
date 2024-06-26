@@ -3,13 +3,116 @@
 Gambarkan AVL-tree dari deretan nilai: k, m, u, t, v, p, x.
 
 ### Proses pembentukan AVL-tree:
-1. Masukkan k (AVL tree hanya memiliki root k).
-2. Masukkan m (k tetap root, m di sebelah kanan k).
-3. Masukkan u (k tetap root, m di sebelah kanan k, u di sebelah kanan m).
-4. Masukkan t (k tetap root, m di sebelah kanan k, u di sebelah kanan m, t di sebelah kiri u).
-5. Masukkan v (k tetap root, m di sebelah kanan k, u di sebelah kanan m, t di sebelah kiri u, v di sebelah kanan u).
-6. Masukkan p (k tetap root, m di sebelah kanan k, u di sebelah kanan m, t di sebelah kiri u, v di sebelah kanan u, p di sebelah kiri u).
-7. Masukkan x (k tetap root, m di sebelah kanan k, u di sebelah kanan m, t di sebelah kiri u, v di sebelah kanan u, p di sebelah kiri u, x di sebelah kanan v).
+Mari kita periksa kembali pembentukan AVL tree untuk deretan nilai: k, m, u, t, v, p, x.
+
+### Proses Pembentukan AVL Tree:
+
+1. **Masukkan k:**
+   ```
+   k
+   ```
+
+2. **Masukkan m:**
+   ```
+     k
+      \
+       m
+   ```
+
+3. **Masukkan u:**
+   ```
+     k
+      \
+       m
+        \
+         u
+   ```
+   (Tidak seimbang, putar kiri pada k)
+   ```
+     m
+    / \
+   k   u
+   ```
+
+4. **Masukkan t:**
+   ```
+     m
+    / \
+   k   u
+      /
+     t
+   ```
+   (Tidak seimbang, putar kanan pada u)
+   ```
+     m
+    / \
+   k   t
+        \
+         u
+   ```
+
+5. **Masukkan v:**
+   ```
+     m
+    / \
+   k   t
+        \
+         u
+          \
+           v
+   ```
+   (Tidak seimbang, putar kiri pada t)
+   ```
+     m
+    / \
+   k   u
+      / \
+     t   v
+   ```
+
+6. **Masukkan p:**
+   ```
+     m
+    / \
+   k   u
+      / \
+     t   v
+    /
+   p
+   ```
+   (Tidak seimbang, putar kanan pada t)
+   ```
+     m
+    / \
+   k   u
+      / \
+     p   v
+      \
+       t
+   ```
+
+7. **Masukkan x:**
+   ```
+     m
+    / \
+   k   u
+      / \
+     p   v
+      \
+       t
+        \
+         x
+   ```
+
+Setelah memasukkan semua nilai dan memeriksa keseimbangan AVL tree:
+
+```
+        t
+       / \
+      m   u
+     / \ / \
+    k  p v  x
+```
 
 #### AVL Tree final:
 ```
