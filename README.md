@@ -204,7 +204,7 @@ Mengacu BST pada soal nomor 3 (sebelum penghapusan node), lakukan traversal deng
 
 #### Traversal preorder:
 ```
-h, e, b, a, c, f, d, g, l, j, i, k, m
+h, e, b, a, c, d, f, g, l, j, i, k, m
 ```
 ### Nomor 5
 ![image](https://github.com/NaufanZaki/Kunci-Jawaban-EAS-Strukdat/assets/111356493/0afa9039-c1e5-4a4a-86dd-837abddbc989)
