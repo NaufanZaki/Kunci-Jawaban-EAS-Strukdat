@@ -146,11 +146,10 @@ Gambarkan AVL-tree dari deretan nilai: a, z, b, y, c, x, d, w, e, v, f.
       /   \
      b     x
     / \   / \
-   a   c w   z
-          /   \
-         v     y
-        /       \
-       e         f
+   a   c w   y
+         / \ / \
+        e   v   z
+
 ```
 
 ### Nomor 3
