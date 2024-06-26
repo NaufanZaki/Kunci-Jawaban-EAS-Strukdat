@@ -200,5 +200,3 @@ Hasil akhir:
 ```
 [1, 2, 3, 4, 5, 5, 7, 8, 9]
 ```
-
-Jika ada pertanyaan lebih lanjut atau penjelasan tambahan yang diperlukan, silakan tanyakan.
