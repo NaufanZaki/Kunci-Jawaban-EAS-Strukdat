@@ -139,7 +139,44 @@ h, e, b, a, c, f, d, g, l, j, i, k, m
    Samarinda <-> Balikpapan (110 km)
    Bontang <-> Samarinda (115 km)
    ```
+#### Langkah-langkah menggunaka Algoritma Prim
+1. Mulai dari node acak, misalnya "Tenggarong".
+2. Pilih edge dengan bobot terendah yang menghubungkan node yang sudah dikunjungi dengan node yang belum dikunjungi.
+3. Tambahkan node tersebut ke dalam MST.
+4. Ulangi langkah 2 dan 3 sampai semua node sudah dikunjungi.
 
+#### Penerapan Algoritma Prim:
+1. Mulai dari **Tenggarong**.
+   - Pilih edge dengan bobot terendah: Tenggarong <-> Samarinda (35 km)
+   - MST: Tenggarong <-> Samarinda (35 km)
+   
+2. Dari **Samarinda**, pilih edge dengan bobot terendah:
+   - Pilih edge dengan bobot terendah: Samarinda <-> Balikpapan (110 km)
+   - MST: Tenggarong <-> Samarinda (35 km), Samarinda <-> Balikpapan (110 km)
+   
+3. Dari **Balikpapan**, pilih edge dengan bobot terendah:
+   - Pilih edge dengan bobot terendah: IKN <-> Balikpapan (90 km)
+   - MST: Tenggarong <-> Samarinda (35 km), Samarinda <-> Balikpapan (110 km), IKN <-> Balikpapan (90 km)
+   
+4. Dari **IKN**, pilih edge dengan bobot terendah:
+   - Pilih edge dengan bobot terendah: Samarinda <-> IKN (125 km)
+   - MST: Tenggarong <-> Samarinda (35 km), Samarinda <-> Balikpapan (110 km), IKN <-> Balikpapan (90 km), Samarinda <-> IKN (125 km)
+   
+5. Dari **Samarinda**, pilih edge dengan bobot terendah:
+   - Pilih edge dengan bobot terendah: Bontang <-> Samarinda (115 km)
+   - MST: Tenggarong <-> Samarinda (35 km), Samarinda <-> Balikpapan (110 km), IKN <-> Balikpapan (90 km), Samarinda <-> IKN (125 km), Bontang <-> Samarinda (115 km)
+
+Setelah semua node terhubung, MST yang terbentuk adalah:
+```
+Tenggarong <-> Samarinda (35 km)
+IKN <-> Balikpapan (90 km)
+Samarinda <-> Balikpapan (110 km)
+Bontang <-> Samarinda (115 km)
+Samarinda <-> IKN (125 km)
+```
+
+### Kesimpulan:
+Jalur penerangan jalan dengan biaya terendah menggunakan algoritma Prim telah ditemukan. Jalur ini memastikan setiap kota terhubung dengan biaya minimum, sesuai dengan adjacency list yang diberikan.
 ### Soal Nomor 7
 Tunjukkan tahapan proses pengurutan data / sorting dengan:
 - **(a) Quicksort**
