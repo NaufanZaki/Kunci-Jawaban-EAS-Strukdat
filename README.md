@@ -13,15 +13,12 @@ Gambarkan AVL-tree dari deretan nilai: k, m, u, t, v, p, x.
 
 #### AVL Tree final:
 ```
-      k
-       \
-        m
-         \
-          u
-         / \
-        t   v
-       /   / \
-      p   x
+      t
+     / \
+    m   u
+   / \ / \
+  k  p v  x
+
 ```
 
 ### Nomor 2
