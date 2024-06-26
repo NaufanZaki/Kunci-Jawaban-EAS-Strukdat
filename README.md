@@ -174,9 +174,6 @@ Samarinda <-> Balikpapan (110 km)
 Bontang <-> Samarinda (115 km)
 Samarinda <-> IKN (125 km)
 ```
-
-### Kesimpulan:
-Jalur penerangan jalan dengan biaya terendah menggunakan algoritma Prim telah ditemukan. Jalur ini memastikan setiap kota terhubung dengan biaya minimum, sesuai dengan adjacency list yang diberikan.
 ### Soal Nomor 7
 Tunjukkan tahapan proses pengurutan data / sorting dengan:
 - **(a) Quicksort**
