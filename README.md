@@ -100,8 +100,6 @@ h, e, b, a, c, f, d, g, l, j, i, k, m
 ![image](https://github.com/NaufanZaki/Kunci-Jawaban-EAS-Strukdat/assets/111356493/0afa9039-c1e5-4a4a-86dd-837abddbc989)
 ![image](https://github.com/NaufanZaki/Kunci-Jawaban-EAS-Strukdat/assets/111356493/67ede16c-c7e5-483f-81db-c8ef742d0adb)
 
-Mari kita selesaikan soal nomor 6 dan 7 satu per satu.
-
 ### Soal Nomor 6
 #### Adjacency List dan Bobot (Jarak):
 - Tenggarong <-> Bontang (140 km)
