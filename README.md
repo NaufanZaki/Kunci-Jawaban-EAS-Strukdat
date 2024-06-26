@@ -4,121 +4,135 @@ Gambarkan AVL-tree dari deretan nilai: k, m, u, t, v, p, x.
 
 ### Proses Pembentukan AVL Tree:
 
-1. **Masukkan k:**
-   ```
-   k
-   ```
-
-2. **Masukkan m:**
-   ```
-     k
-      \
-       m
-   ```
-
-3. **Masukkan u:**
-   ```
-     k
-      \
-       m
-        \
-         u
-   ```
-   (Tidak seimbang, putar kiri pada k)
-   ```
-     m
-    / \
-   k   u
-   ```
-
-4. **Masukkan t:**
-   ```
-     m
-    / \
-   k   u
-      /
-     t
-   ```
-   (Tidak seimbang, putar kanan pada u)
-   ```
-     m
-    / \
-   k   t
-        \
-         u
-   ```
-
-5. **Masukkan v:**
-   ```
-     m
-    / \
-   k   t
-        \
-         u
-          \
-           v
-   ```
-   (Tidak seimbang, putar kiri pada t)
-   ```
-     m
-    / \
-   k   u
-      / \
-     t   v
-   ```
-
-6. **Masukkan p:**
-   ```
-     m
-    / \
-   k   u
-      / \
-     t   v
-    /
-   p
-   ```
-   (Tidak seimbang, putar kanan pada t)
-   ```
-     m
-    / \
-   k   u
-      / \
-     p   v
-      \
-       t
-   ```
-
-7. **Masukkan x:**
-   ```
-     m
-    / \
-   k   u
-      / \
-     p   v
-      \
-       t
-        \
-         x
-   ```
-
-Setelah memasukkan semua nilai dan memeriksa keseimbangan AVL tree:
-
+### Langkah 1: Masukkan k
 ```
-        t
-       / \
-      m   u
-     / \ / \
-    k  p v  x
+k
 ```
 
-#### AVL Tree final:
+### Langkah 2: Masukkan m
+```
+  k
+   \
+    m
+```
+
+### Langkah 3: Masukkan u
+```
+  k
+   \
+    m
+     \
+      u
+```
+(Tidak seimbang, putar kiri pada k)
+```
+  m
+ / \
+k   u
+```
+
+### Langkah 4: Masukkan t
+```
+  m
+ / \
+k   u
+   /
+  t
+```
+(Tidak seimbang, putar kanan pada u)
+```
+  m
+ / \
+k   t
+     \
+      u
+```
+
+### Langkah 5: Masukkan v
+```
+  m
+ / \
+k   t
+     \
+      u
+       \
+        v
+```
+(Tidak seimbang, putar kiri pada t)
+```
+  m
+ / \
+k   u
+   / \
+  t   v
+```
+
+### Langkah 6: Masukkan p
+```
+  m
+ / \
+k   u
+   / \
+  t   v
+ /
+p
+```
+(Tidak seimbang, putar kanan pada t)
+```
+  m
+ / \
+k   u
+   / \
+  p   v
+   \
+    t
+```
+
+### Langkah 7: Masukkan x
+```
+  m
+ / \
+k   u
+   / \
+  p   v
+   \   \
+    t   x
+```
+(Tidak seimbang, kita perlu melakukan beberapa rotasi untuk menyeimbangkan. Setelah beberapa rotasi, hasil akhir adalah:)
 ```
       t
      / \
-    m   u
+    m   v
    / \ / \
-  k  p v  x
+  k  p u  x
+```
 
+### Penjelasan Rotasi Akhir:
+
+- Masukkan 'p': Menyebabkan ketidakseimbangan di sub-pohon kiri dari 'u', sehingga dilakukan rotasi kanan pada 't' menjadi:
+```
+      m
+     / \
+    k   u
+       / \
+      p   v
+```
+- Masukkan 'x': Menyebabkan ketidakseimbangan di sub-pohon kanan dari 'u', sehingga dilakukan rotasi kiri pada 'u' menjadi:
+```
+      t
+     / \
+    m   v
+   / \ / \
+  k  p u  x
+```
+
+Dengan langkah-langkah ini, kita mendapatkan AVL tree yang seimbang:
+```
+      t
+     / \
+    m   v
+   / \ / \
+  k  p u  x
 ```
 
 ### Nomor 2
